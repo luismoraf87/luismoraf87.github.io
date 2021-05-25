@@ -1,0 +1,42 @@
+"use strict";
+
+var forma = document.getElementById("forma"),
+
+salidaClave=document.getElementById("salidaClave"),
+
+salidaNombre=document.getElementById("salidaNombre"),
+
+salidaTelefono=document.getElementById("salidaTelefono"),
+
+salidaMateria=document.getElementById("salidaMateria"),
+
+salidaFecha=document.getElementById("salidaFecha"),
+
+
+
+forma.addEventListener("input.valueOf(procesa)", procesa, false);
+
+
+function procesa(){
+
+var clave=forma["clave"].value,
+
+nombre=forma["nombre"].value,
+
+telefono=forma["telefono"].value,
+
+fecha=forma["fecha"],
+
+fecha1=new Date(fecha.value);
+
+salidaClave.textContent="Boleta:"+clave+" ";
+
+salidaNombre.textContent="Nombre:"+nombre+" ";
+
+salidaTelefono.textContent="Grupo:"+telefono+" ";
+
+salidaMateria.textContent="Materia:"+materia+" ";
+
+salidaFecha.textContent="Fecha:"+fecha1+" ";
+
+}

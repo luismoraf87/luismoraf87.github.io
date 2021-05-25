@@ -1,0 +1,79 @@
+HTML:
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>DATOS</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/css.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>DATOS</h1>
+
+</header>
+
+<form id="forma" action="javascript:procesa()">
+
+<label>
+
+<em>El borde azul indica obligatorio.</em>
+
+</label>
+
+<p> <label>
+
+Boleta <input type="text" name="clave" placeholder="Ingresar" >
+
+</label></p>
+
+<p><label>
+
+Nombre <input type="text" name="nombre" pattern=".{1,50}" maxlength="50" size="13" placeholder="1 a 50 caracteres">
+
+</label></p>
+
+<p><label>
+
+Grupo <input type="text" name="telefono" pattern="\d{8,14}" required
+
+maxlength="14" size="14" placeholder="Ingresar" >
+
+</label></p>
+
+<p><label>
+
+Materia <input type="text" name="materia" pattern=".{1,50}" maxlength="50" size="13" placeholder="Ingresar">
+
+</label> </p>
+
+Fecha <input type="text" name="fecha" pattern=".{1,50}" maxlength="50" size="13" placeholder="Ingresar">
+  
+<p><input type="submit" name="enviar" value="Enviar" accesskey="P">
+
+<output id="procesa"></output>
+
+<br><output id="salidaClave"></output><output id="salidaNombre"></output>
+
+<output id="salidaTelefono"></output><output id="salidaMateria"></output><output id="salidaFecha"></output>
+
+<footer>Copyright 2021 Mora Flores Luis Arturo</footer>
+
+</form>
+
+<script src="js/js.js"></script>
+
+</body>
+
+</html>
